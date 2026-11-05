@@ -1,0 +1,41 @@
+Issue Type,Summary,Description,Labels,Story Points
+Story,US-01 Submit a road or drainage report,"As a resident, I want to submit a road or drainage report so I can receive proof that it was received.
+Trace: PP1 → FR-01 → T01
+Given a signed-in resident enters valid details
+When they submit
+Then one Received report is saved and its reference appears.",Must,3
+Story,US-02 Assign a report with a due date,"As a supervisor, I want to assign a report with a due date so I can make ownership clear.
+Trace: PP2 → FR-02 → T02
+Given an unassigned Received report exists
+When the supervisor selects an officer and future deadline
+Then the officer sees it in their queue and the report becomes Assigned.",Must,3
+Story,US-03 Check my report,"As a resident, I want to check my report so I can see its progress without calling.
+Trace: PP3 → FR-03 → T03
+Given a resident owns an assigned report
+When they open its reference
+Then they see its current status and public history.",Must,2
+Story,US-04 Start work on my case,"As a assigned officer, I want to start work on my case so I can show that action is underway.
+Trace: PP2 → FR-04 → T04
+Given a report is assigned to the officer
+When they mark it In progress
+Then the new status and timestamp appear in its history.",Must,2
+Story,US-05 See overdue cases in one queue,"As a supervisor, I want to see overdue cases in one queue so I can follow up before they are forgotten.
+Trace: PP4 → FR-05 → T05
+Given an open assigned report has passed its deadline
+When the overdue check runs twice
+Then exactly one escalation is recorded and visible to the supervisor.",Must,3
+Story,US-06 Close a case with an action summary,"As a assigned officer, I want to close a case with an action summary so I can explain the outcome to the resident.
+Trace: PP5 → FR-06 → T06
+Given an In progress report belongs to the officer
+When they save a nonblank action summary and resolve it
+Then the report becomes Resolved and the resident can read the summary.",Must,3
+Story,US-07 Filter the officer queue by category and status,"As a supervisor, I want to filter the officer queue by category and status so I can find cases for follow-up.
+Trace: PP2 → FR-07 → T07
+Given the queue contains mixed categories and statuses
+When the supervisor applies both filters
+Then only matching reports are shown.",Should,5
+Story,US-08 Export a weekly closure summary,"As a supervisor, I want to export a weekly closure summary so I can review the pilot’s workload.
+Trace: PP5 → FR-08 → T08
+Given resolved cases exist within and outside the selected week
+When the supervisor exports that week
+Then the CSV contains only counts by category for that week.",Could,5
