@@ -1,0 +1,92 @@
+/* Use a light surface, dark text and one teal accent across the three screens. */
+:root {
+    color-scheme: light;
+    font-family: Inter, system-ui, sans-serif;
+    color: #172a30;
+    background: #f3f7f6;
+    --accent: #09665c;
+    --muted: #435d61;
+    --border: #cad9d7;
+}
+/* Keep padding within the declared width of fields and cards. */
+* { box-sizing: border-box; }
+/* Remove browser margins and set comfortable line spacing. */
+body { margin: 0; line-height: 1.55; }
+/* Keep links recognizable in body text. */
+a { color: var(--accent); }
+/* Give keyboard users a visible focus indicator. */
+:focus-visible { outline: 3px solid #19877b; outline-offset: 3px; }
+/* Reveal the skip link when keyboard users focus it. */
+.skip { position: absolute; left: 16px; top: -80px; background: white; padding: 8px; z-index: 1; }
+.skip:focus { top: 8px; }
+/* Separate the shared header from the page below. */
+.top { background: #fff; border-bottom: 1px solid var(--border); }
+/* Align the shared header and content to the same width. */
+.top-inner, .shell { max-width: 1040px; margin: auto; padding-inline: clamp(16px, 4vw, 38px); }
+/* Allow header links to wrap when the screen is narrow. */
+.top-inner, nav { display: flex; align-items: center; flex-wrap: wrap; gap: 8px 20px; }
+.top-inner { min-height: 70px; justify-content: space-between; padding-block: 9px; }
+/* Make the product name identifiable at a glance. */
+.brand { display: flex; align-items: center; gap: 10px; text-decoration: none; font-weight: 800; letter-spacing: .08em; }
+.brand-mark { display: grid; place-items: center; width: 32px; height: 32px; border-radius: 8px; color: white; background: var(--accent); }
+/* Highlight the active page in the navigation. */
+nav a, .text-button { text-decoration: none; font-weight: 650; padding: 7px 8px; font-size: .9rem; }
+nav a[aria-current], .queue-item[aria-current] { background: #e0efeb; border-radius: 6px; }
+/* Space the content and keep page headings easy to scan. */
+.shell { padding-block: clamp(24px, 5vw, 54px); min-height: 75vh; }
+.heading { margin-bottom: 20px; }
+.eyebrow { color: var(--accent); font-size: .82rem; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; }
+h1, h2, h3 { margin: 0 0 .45em; line-height: 1.18; overflow-wrap: anywhere; }
+h1 { font-size: clamp(2rem, 4vw, 3rem); letter-spacing: -.045em; }
+h2 { font-size: 1.3rem; }
+h3 { font-size: 1rem; margin-top: 1.3rem; }
+p { margin: 0 0 1em; color: var(--muted); overflow-wrap: anywhere; }
+/* Arrange sign-in and office layouts in two columns on larger screens. */
+.login-grid, .office-grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 20px; align-items: start; }
+.office-grid { grid-template-columns: minmax(0, 1fr) minmax(0, 1.45fr); }
+/* Give the sign-in introduction a strong visual anchor. */
+.hero { background: #0b4d46; color: white; padding: clamp(22px, 5vw, 48px); border-radius: 14px; }
+.hero p { color: #d7efea; }
+/* Use consistent spacing and surfaces for forms and report details. */
+.card { background: #fff; border: 1px solid var(--border); border-radius: 14px; padding: clamp(16px, 3vw, 28px); }
+.form-card { max-width: 660px; margin-bottom: 16px; }
+.stack { display: grid; gap: 15px; }
+.lookup { display: flex; align-items: end; flex-wrap: wrap; gap: 12px; }
+.lookup label { flex: 1 1 220px; }
+/* Make controls readable and large enough to tap. */
+label { display: grid; gap: 5px; font-weight: 650; }
+input, select, textarea, button { font: inherit; }
+input, select, textarea { width: 100%; min-height: 44px; background: white; color: inherit; border: 1px solid #8da8a5; border-radius: 7px; padding: 9px 12px; }
+textarea { resize: vertical; }
+/* Give the main actions a consistent filled style. */
+button { cursor: pointer; min-height: 44px; color: white; background: var(--accent); border: 1px solid transparent; border-radius: 7px; padding: 8px 16px; font-weight: 750; }
+button:hover { background: #074f48; }
+button.text-button, button.text-button:hover { background: transparent; color: var(--accent); }
+.secondary { font-weight: 750; display: inline-block; }
+/* Distinguish success from corrections while keeping the text explicit. */
+.notice, .error, .reply { border-radius: 7px; padding: 10px 12px; }
+.notice { background: #e0f3ea; color: #124d39; }
+.error { background: #fcebe8; color: #8b211c; margin-top: 10px; }
+.reply { background: #edf4f3; white-space: pre-wrap; }
+/* Put reference numbers and status labels in the same row when space allows. */
+.row { display: flex; flex-wrap: wrap; gap: 10px; justify-content: space-between; align-items: center; }
+.badge, .count { display: inline-block; width: fit-content; font-size: .78rem; font-weight: 750; border-radius: 999px; padding: 4px 10px; background: #e9eef2; color: #28465e; }
+.badge.progress { background: #fff0cc; color: #664509; }
+.badge.resolved { background: #def2e5; color: #1e5a39; }
+/* Add compact, clickable queue rows. */
+.queue-item { display: grid; gap: 4px; border: 1px solid var(--border); border-radius: 8px; margin-top: 10px; padding: 10px 12px; text-decoration: none; }
+.queue-item strong { overflow-wrap: anywhere; }
+.queue-item:hover { background: #f0f7f5; }
+/* Display timestamps under the chronological status labels. */
+.timeline { padding-left: 22px; }
+.timeline time { display: block; color: var(--muted); font-size: .9rem; }
+.timeline li { margin-bottom: 8px; }
+/* Space the demo sign-in hint and footer. */
+details { margin-top: 14px; color: var(--muted); }
+summary { cursor: pointer; }
+details p { margin: 8px 0 0; }
+.footer { padding: 16px; text-align: center; color: var(--muted); font-size: .85rem; }
+/* Stack the two-column layouts on phones. */
+@media (max-width: 700px) {
+    .login-grid, .office-grid { grid-template-columns: minmax(0, 1fr); }
+}
