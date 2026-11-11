@@ -1,0 +1,205 @@
+<mxfile host="Electron">
+  <diagram id="cires-seq" name="Issue reporting and escalation">
+    <mxGraphModel dx="1613" dy="1113" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1690" pageHeight="1120" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="k" parent="1" style="html=1;fontFamily=Arial;whiteSpace=wrap;text;align=left;verticalAlign=middle;fontColor=#182839;fontSize=16;fontStyle=1" value="&lt;span&gt;CIRES / MILESTONE 3&lt;/span&gt;" vertex="1">
+          <mxGeometry height="28" width="1400" x="40" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="title" parent="1" style="html=1;fontFamily=Arial;whiteSpace=wrap;text;align=left;verticalAlign=middle;fontColor=#182839;fontSize=16;fontStyle=1" value="&lt;span&gt;Sequence diagram – Reporting and escalating an issue&lt;/span&gt;" vertex="1">
+          <mxGeometry height="48" width="1500" x="40" y="51" as="geometry" />
+        </mxCell>
+        <mxCell id="frame" parent="1" style="html=1;fontFamily=Arial;whiteSpace=wrap;fillColor=none;strokeColor=#6C8891;strokeWidth=1.5;fontStyle=1;fontSize=16;" value="" vertex="1">
+          <mxGeometry height="518" width="1590" x="45" y="478" as="geometry" />
+        </mxCell>
+        <mxCell id="split" edge="1" parent="1" style="html=1;fontFamily=Arial;fontSize=16;strokeColor=#385466;strokeWidth=1.5;labelBackgroundColor=#FFFFFF;endArrow=none;dashed=1;fontStyle=1" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="45" y="664" as="sourcePoint" />
+            <mxPoint x="1635" y="664" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="p0" parent="1" style="html=1;fontFamily=Arial;whiteSpace=wrap;rounded=1;arcSize=10;fillColor=#137C75;strokeColor=#137C75;fontColor=#FFFFFF;fontSize=16;fontStyle=1" value="&lt;span&gt;Citizen&lt;/span&gt;" vertex="1">
+          <mxGeometry height="44" width="202" x="44" y="116" as="geometry" />
+        </mxCell>
+        <mxCell id="l0" edge="1" parent="1" style="html=1;fontFamily=Arial;fontSize=16;strokeColor=#385466;strokeWidth=1.5;labelBackgroundColor=#FFFFFF;endArrow=none;dashed=1;strokeColor=#90A5AD;fontStyle=1" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="145" y="160" as="sourcePoint" />
+            <mxPoint x="145" y="1006" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="p1" parent="1" style="html=1;fontFamily=Arial;whiteSpace=wrap;rounded=1;arcSize=10;fillColor=#137C75;strokeColor=#137C75;fontColor=#FFFFFF;fontSize=16;fontStyle=1" value="&lt;span&gt;Cell Executive&lt;/span&gt;" vertex="1">
+          <mxGeometry height="44" width="202" x="334" y="116" as="geometry" />
+        </mxCell>
+        <mxCell id="l1" edge="1" parent="1" style="html=1;fontFamily=Arial;fontSize=16;strokeColor=#385466;strokeWidth=1.5;labelBackgroundColor=#FFFFFF;endArrow=none;dashed=1;strokeColor=#90A5AD;fontStyle=1" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="435" y="160" as="sourcePoint" />
+            <mxPoint x="435" y="1006" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="p2" parent="1" style="html=1;fontFamily=Arial;whiteSpace=wrap;rounded=1;arcSize=10;fillColor=#137C75;strokeColor=#137C75;fontColor=#FFFFFF;fontSize=16;fontStyle=1" value="&lt;span&gt;CIRES web app&lt;/span&gt;" vertex="1">
+          <mxGeometry height="44" width="202" x="724" y="116" as="geometry" />
+        </mxCell>
+        <mxCell id="l2" edge="1" parent="1" style="html=1;fontFamily=Arial;fontSize=16;strokeColor=#385466;strokeWidth=1.5;labelBackgroundColor=#FFFFFF;endArrow=none;dashed=1;strokeColor=#90A5AD;fontStyle=1" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="825" y="160" as="sourcePoint" />
+            <mxPoint x="825" y="1006" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="p3" parent="1" style="html=1;fontFamily=Arial;whiteSpace=wrap;rounded=1;arcSize=10;fillColor=#137C75;strokeColor=#137C75;fontColor=#FFFFFF;fontSize=16;fontStyle=1" value="&lt;span&gt;MySQL database&lt;/span&gt;" vertex="1">
+          <mxGeometry height="44" width="202" x="1109" y="116" as="geometry" />
+        </mxCell>
+        <mxCell id="l3" edge="1" parent="1" style="html=1;fontFamily=Arial;fontSize=16;strokeColor=#385466;strokeWidth=1.5;labelBackgroundColor=#FFFFFF;endArrow=none;dashed=1;strokeColor=#90A5AD;fontStyle=1" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1210" y="160" as="sourcePoint" />
+            <mxPoint x="1210" y="1006" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="p4" parent="1" style="html=1;fontFamily=Arial;whiteSpace=wrap;rounded=1;arcSize=10;fillColor=#137C75;strokeColor=#137C75;fontColor=#FFFFFF;fontSize=16;fontStyle=1" value="&lt;span&gt;Sector Executive&lt;/span&gt;" vertex="1">
+          <mxGeometry height="44" width="202" x="1429" y="116" as="geometry" />
+        </mxCell>
+        <mxCell id="l4" edge="1" parent="1" style="html=1;fontFamily=Arial;fontSize=16;strokeColor=#385466;strokeWidth=1.5;labelBackgroundColor=#FFFFFF;endArrow=none;dashed=1;strokeColor=#90A5AD;fontStyle=1" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1530" y="160" as="sourcePoint" />
+            <mxPoint x="1530" y="1006" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m1" edge="1" parent="1" style="html=1;fontFamily=Arial;fontSize=16;strokeColor=#385466;strokeWidth=1.5;labelBackgroundColor=#FFFFFF;endArrow=block;endFill=1;fontStyle=1" value="1. Submit category, cell, location and description">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="145" y="197" as="sourcePoint" />
+            <mxPoint x="825" y="197" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m2" edge="1" parent="1" style="html=1;fontFamily=Arial;fontSize=16;strokeColor=#385466;strokeWidth=1.5;labelBackgroundColor=#FFFFFF;endArrow=block;endFill=1;fontStyle=1" value="2. Save issue and Received update">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="825" y="240" as="sourcePoint" />
+            <mxPoint x="1210" y="240" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m3" edge="1" parent="1" style="html=1;fontFamily=Arial;fontSize=16;strokeColor=#385466;strokeWidth=1.5;labelBackgroundColor=#FFFFFF;endArrow=open;dashed=1;fontStyle=1" value="3. Return saved reference">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1210" y="283" as="sourcePoint" />
+            <mxPoint x="825" y="283" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m4" edge="1" parent="1" style="html=1;fontFamily=Arial;fontSize=16;strokeColor=#385466;strokeWidth=1.5;labelBackgroundColor=#FFFFFF;endArrow=open;dashed=1;fontStyle=1" value="4. Show reference and Received status">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="825" y="326" as="sourcePoint" />
+            <mxPoint x="145" y="326" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m5" edge="1" parent="1" style="html=1;fontFamily=Arial;fontSize=16;strokeColor=#385466;strokeWidth=1.5;labelBackgroundColor=#FFFFFF;endArrow=block;endFill=1;fontStyle=1" value="5. Open cell issue queue">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="435" y="369" as="sourcePoint" />
+            <mxPoint x="825" y="369" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m6" edge="1" parent="1" style="html=1;fontFamily=Arial;fontSize=16;strokeColor=#385466;strokeWidth=1.5;labelBackgroundColor=#FFFFFF;endArrow=block;endFill=1;fontStyle=1" value="6. Load cell issues and latest status">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="825" y="412" as="sourcePoint" />
+            <mxPoint x="1210" y="412" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m7" edge="1" parent="1" style="html=1;fontFamily=Arial;fontSize=16;strokeColor=#385466;strokeWidth=1.5;labelBackgroundColor=#FFFFFF;endArrow=open;dashed=1;fontStyle=1" value="7. Show open issues and deadlines">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="825" y="453" as="sourcePoint" />
+            <mxPoint x="435" y="453" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="alt" parent="1" style="html=1;fontFamily=Arial;whiteSpace=wrap;text;align=left;verticalAlign=middle;fontColor=#182839;fontSize=16;fontStyle=1" value="&lt;span&gt;alt&lt;/span&gt;" vertex="1">
+          <mxGeometry height="26" width="75" x="54" y="481" as="geometry" />
+        </mxCell>
+        <mxCell id="guard1" parent="1" style="html=1;fontFamily=Arial;whiteSpace=wrap;text;align=left;verticalAlign=middle;fontColor=#182839;fontSize=16;fontStyle=1" value="&lt;span&gt;[Cell Executive resolves the issue before escalation]&lt;/span&gt;" vertex="1">
+          <mxGeometry height="24" width="620" x="175" y="484" as="geometry" />
+        </mxCell>
+        <mxCell id="m8" edge="1" parent="1" style="html=1;fontFamily=Arial;fontSize=16;strokeColor=#385466;strokeWidth=1.5;labelBackgroundColor=#FFFFFF;endArrow=block;endFill=1;fontStyle=1" value="8. Resolve issue with completion note">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="435" y="535" as="sourcePoint" />
+            <mxPoint x="825" y="535" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m9" edge="1" parent="1" style="html=1;fontFamily=Arial;fontSize=16;strokeColor=#385466;strokeWidth=1.5;labelBackgroundColor=#FFFFFF;endArrow=block;endFill=1;fontStyle=1" value="9. Save Resolved update and note">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="825" y="581" as="sourcePoint" />
+            <mxPoint x="1210" y="581" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m10" edge="1" parent="1" style="html=1;fontFamily=Arial;fontSize=16;strokeColor=#385466;strokeWidth=1.5;labelBackgroundColor=#FFFFFF;endArrow=open;dashed=1;fontStyle=1" value="10. Confirm resolution to Cell Executive">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="825" y="628" as="sourcePoint" />
+            <mxPoint x="435" y="628" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="guard2" parent="1" style="html=1;fontFamily=Arial;whiteSpace=wrap;text;align=left;verticalAlign=middle;fontColor=#182839;fontSize=16;fontStyle=1" value="&lt;span&gt;[Issue remains open past its follow-up deadline]&lt;/span&gt;" vertex="1">
+          <mxGeometry height="26" width="615" x="175" y="675" as="geometry" />
+        </mxCell>
+        <mxCell id="m11" edge="1" parent="1" style="html=1;fontFamily=Arial;fontSize=16;strokeColor=#385466;strokeWidth=1.5;labelBackgroundColor=#FFFFFF;endArrow=block;endFill=1;fontStyle=1" value="11. Refresh staff queue">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="435" y="723" as="sourcePoint" />
+            <mxPoint x="825" y="723" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m12" edge="1" parent="1" style="html=1;fontFamily=Arial;fontSize=16;strokeColor=#385466;strokeWidth=1.5;labelBackgroundColor=#FFFFFF;endArrow=block;endFill=1;fontStyle=1" value="12. Check deadline and save one escalation">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="825" y="766" as="sourcePoint" />
+            <mxPoint x="1210" y="766" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m13" edge="1" parent="1" style="html=1;fontFamily=Arial;fontSize=16;strokeColor=#385466;strokeWidth=1.5;labelBackgroundColor=#FFFFFF;endArrow=block;endFill=1;fontStyle=1" value="13. Open sector escalation queue">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1530" y="808" as="sourcePoint" />
+            <mxPoint x="825" y="808" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m14" edge="1" parent="1" style="html=1;fontFamily=Arial;fontSize=16;strokeColor=#385466;strokeWidth=1.5;labelBackgroundColor=#FFFFFF;endArrow=open;dashed=1;fontStyle=1" value="14. Show escalated issue">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="825" y="850" as="sourcePoint" />
+            <mxPoint x="1530" y="850" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m15" edge="1" parent="1" style="html=1;fontFamily=Arial;fontSize=16;strokeColor=#385466;strokeWidth=1.5;labelBackgroundColor=#FFFFFF;endArrow=block;endFill=1;fontStyle=1" value="15. Resolve issue with completion note">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1530" y="893" as="sourcePoint" />
+            <mxPoint x="825" y="893" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m16" edge="1" parent="1" style="html=1;fontFamily=Arial;fontSize=16;strokeColor=#385466;strokeWidth=1.5;labelBackgroundColor=#FFFFFF;endArrow=block;endFill=1;fontStyle=1" value="16. Save Resolved update and note">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="825" y="935" as="sourcePoint" />
+            <mxPoint x="1210" y="935" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m17" edge="1" parent="1" style="html=1;fontFamily=Arial;fontSize=16;strokeColor=#385466;strokeWidth=1.5;labelBackgroundColor=#FFFFFF;endArrow=open;dashed=1;fontStyle=1" value="17. Confirm resolution to Sector Executive">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="825" y="975" as="sourcePoint" />
+            <mxPoint x="1530" y="975" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="extend0" edge="1" parent="1" style="html=1;fontFamily=Arial;fontSize=16;strokeColor=#385466;strokeWidth=1.5;labelBackgroundColor=#FFFFFF;endArrow=none;dashed=1;strokeColor=#90A5AD;fontStyle=1" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="145" y="1006" as="sourcePoint" />
+            <mxPoint x="145" y="1082" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="extend2" edge="1" parent="1" style="html=1;fontFamily=Arial;fontSize=16;strokeColor=#385466;strokeWidth=1.5;labelBackgroundColor=#FFFFFF;endArrow=none;dashed=1;strokeColor=#90A5AD;fontStyle=1" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="825" y="1006" as="sourcePoint" />
+            <mxPoint x="825" y="1082" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m18" edge="1" parent="1" style="html=1;fontFamily=Arial;fontSize=16;strokeColor=#385466;strokeWidth=1.5;labelBackgroundColor=#FFFFFF;endArrow=block;endFill=1;fontStyle=1" value="18. Open my issue">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="145" y="1024" as="sourcePoint" />
+            <mxPoint x="825" y="1024" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m19" edge="1" parent="1" style="html=1;fontFamily=Arial;fontSize=16;strokeColor=#385466;strokeWidth=1.5;labelBackgroundColor=#FFFFFF;endArrow=open;dashed=1;fontStyle=1" value="19. Show Resolved status and completion note">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="825" y="1066" as="sourcePoint" />
+            <mxPoint x="145" y="1066" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

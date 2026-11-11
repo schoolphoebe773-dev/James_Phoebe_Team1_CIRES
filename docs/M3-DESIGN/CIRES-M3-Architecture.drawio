@@ -1,0 +1,75 @@
+<mxfile host="Electron">
+  <diagram id="cires-m3" name="CIRES Architecture">
+    <mxGraphModel dx="1173" dy="809" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1160" pageHeight="830" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontColor=#172D43;text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=30;" value="&lt;b&gt;Architecture: the decisions that are expensive to change&lt;/b&gt;" vertex="1">
+          <mxGeometry height="48" width="1080" x="40" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="cit" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontColor=#172D43;rounded=1;arcSize=10;strokeWidth=1.5;fontSize=15;spacing=10;fillColor=#F0F6FB;strokeColor=#819DB4;" value="&lt;b&gt;Citizen&lt;/b&gt;&lt;br&gt;Submit an issue and track its status." vertex="1">
+          <mxGeometry height="82" width="318" x="60" y="156" as="geometry" />
+        </mxCell>
+        <mxCell id="cell" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontColor=#172D43;rounded=1;arcSize=10;strokeWidth=1.5;fontSize=15;spacing=10;fillColor=#F0F6FB;strokeColor=#819DB4;" value="&lt;b&gt;Cell Executive&lt;/b&gt;&lt;br&gt;Review assigned issues and update progress." vertex="1">
+          <mxGeometry height="82" width="318" x="421" y="156" as="geometry" />
+        </mxCell>
+        <mxCell id="sec" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontColor=#172D43;rounded=1;arcSize=10;strokeWidth=1.5;fontSize=15;spacing=10;fillColor=#F0F6FB;strokeColor=#819DB4;" value="&lt;b&gt;Sector Executive&lt;/b&gt;&lt;br&gt;Review escalated issues and update progress." vertex="1">
+          <mxGeometry height="82" width="318" x="782" y="156" as="geometry" />
+        </mxCell>
+        <mxCell id="host" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;rounded=1;arcSize=4;fillColor=#d5e8d4;strokeColor=#82b366;dashed=1;strokeWidth=2;" value="" vertex="1">
+          <mxGeometry height="465" width="1080" x="40" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="hosttitle" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontColor=#172D43;text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontSize=14;" value="&lt;b&gt;LOCAL DEMO HOST · AMPPS&lt;/b&gt;" vertex="1">
+          <mxGeometry height="26" width="1020" x="60" y="306" as="geometry" />
+        </mxCell>
+        <mxCell id="web" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontColor=#172D43;rounded=1;arcSize=10;strokeWidth=1.5;fontSize=15;spacing=10;fillColor=#DEF0EA;strokeColor=#57968A;" value="&lt;b&gt;CIRES web application · Apache + PHP&lt;/b&gt;&lt;br&gt;One application serves all three browser views and checks what each user may see or change." vertex="1">
+          <mxGeometry height="82" width="1040" x="60" y="345" as="geometry" />
+        </mxCell>
+        <mxCell id="route" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontColor=#172D43;rounded=1;arcSize=10;strokeWidth=1.5;fontSize=15;spacing=10;fillColor=#F0F6FB;strokeColor=#819DB4;" value="&lt;b&gt;Issue intake and routing&lt;/b&gt;&lt;br&gt;Send a new issue to the Cell Executive responsible for the selected cell." vertex="1">
+          <mxGeometry height="108" width="318" x="60" y="476" as="geometry" />
+        </mxCell>
+        <mxCell id="status" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontColor=#172D43;rounded=1;arcSize=10;strokeWidth=1.5;fontSize=15;spacing=10;fillColor=#F0F6FB;strokeColor=#819DB4;" value="&lt;b&gt;Status and resolution&lt;/b&gt;&lt;br&gt;Received → In progress → Resolved. Save the completion note and show it to the citizen." vertex="1">
+          <mxGeometry height="108" width="318" x="421" y="476" as="geometry" />
+        </mxCell>
+        <mxCell id="esc" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;fontColor=#172D43;rounded=1;arcSize=10;strokeWidth=1.5;fontSize=15;spacing=10;fillColor=#F0F6FB;strokeColor=#819DB4;" value="&lt;b&gt;Overdue escalation&lt;/b&gt;&lt;br&gt;On a staff queue refresh, move unresolved issues past the follow-up deadline to the responsible Sector Executive." vertex="1">
+          <mxGeometry height="108" width="318" x="782" y="476" as="geometry" />
+        </mxCell>
+        <mxCell id="db" parent="1" style="html=1;whiteSpace=wrap;fontFamily=Arial;rounded=1;arcSize=10;strokeWidth=1.5;fontSize=15;spacing=10;shape=cylinder3;boundedLbl=1;size=14;fillColor=#fff2cc;strokeColor=#d6b656;" value="&lt;b&gt;MySQL database · AMPPS&lt;/b&gt;&lt;br&gt;Users and roles · issues and assignments · deadlines · status and escalation history" vertex="1">
+          <mxGeometry height="94" width="460" x="350" y="644" as="geometry" />
+        </mxCell>
+        <mxCell id="http1" edge="1" parent="1" source="cit" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;startArrow=block;strokeColor=#45627A;strokeWidth=2;fontSize=12;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;entryX=0.153;entryY=0;" target="web" value="HTTP · browser requests / responses">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="http2" edge="1" parent="1" source="cell" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;startArrow=block;strokeColor=#45627A;strokeWidth=2;fontSize=12;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" target="web" value="HTTP · browser requests / responses">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="http3" edge="1" parent="1" source="sec" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;startArrow=block;strokeColor=#45627A;strokeWidth=2;fontSize=12;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;entryX=0.847;entryY=0;" target="web" value="HTTP · browser requests / responses">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="php1" edge="1" parent="1" source="web" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;startArrow=block;strokeColor=#45627A;strokeWidth=2;fontSize=12;labelBackgroundColor=#FFFFFF;exitX=0.153;exitY=1;entryX=0.5;entryY=0;startArrow=none;" target="route" value="Internal PHP calls">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="php2" edge="1" parent="1" source="web" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;startArrow=block;strokeColor=#45627A;strokeWidth=2;fontSize=12;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;entryX=0.5;entryY=0;startArrow=none;" target="status" value="Internal PHP calls">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="php3" edge="1" parent="1" source="web" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;startArrow=block;strokeColor=#45627A;strokeWidth=2;fontSize=12;labelBackgroundColor=#FFFFFF;exitX=0.847;exitY=1;entryX=0.5;entryY=0;startArrow=none;" target="esc" value="Internal PHP calls">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sql" edge="1" parent="1" source="status" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;startArrow=block;strokeColor=#45627A;strokeWidth=2;fontSize=12;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" target="db" value="SQL over local MySQL connection · PDO">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sql2" edge="1" parent="1" source="route" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;startArrow=block;strokeColor=#45627A;strokeWidth=2;fontSize=12;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;entryX=0;entryY=0.55;" target="db" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sql3" edge="1" parent="1" source="esc" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;startArrow=block;strokeColor=#45627A;strokeWidth=2;fontSize=12;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;entryX=1;entryY=0.55;" target="db" value="">
+          <mxGeometry relative="1" x="0.1329" as="geometry">
+            <Array as="points">
+              <mxPoint x="960" y="584" />
+              <mxPoint x="960" y="695.7" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
