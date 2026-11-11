@@ -1,0 +1,2 @@
+# Keep local database credentials out of Git.
+/.env

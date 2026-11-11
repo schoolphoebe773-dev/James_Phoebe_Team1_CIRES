@@ -1,0 +1,4 @@
+# Block browser requests for environment files.
+<FilesMatch "^\.env">
+    Require all denied
+</FilesMatch>
